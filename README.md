@@ -9,4 +9,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 1. clone
 2. npm install
-3. npm run dev
+3. npm install vue-router@latest
+4. npm install vue-toastification
+5. npm run dev
