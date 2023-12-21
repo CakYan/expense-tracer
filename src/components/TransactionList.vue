@@ -1,14 +1,12 @@
 <script setup>
 
-const emit = defineEmits(['transactionDeleted'])
+const emit = defineEmits(['transactionDeleted']);
 
+import { useTransactionStore } from '../stores/TransactionStore';
+import { ref, computed } from 'vue';
 import { defineProps } from 'vue';
-const props = defineProps({
-    transactions: {
-        type: Array,
-        required: true,
-    }
-});
+const transactionStore = useTransactionStore();
+const transactions = computed(() => transactionStore.transactions);
 
 const deleteTransaction = (id) => {
     emit('transactionDeleted', id);
