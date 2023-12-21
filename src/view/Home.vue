@@ -20,38 +20,6 @@
     transactionStore.loadTransactionStore();
   });
 
-  // const total = computed (() => {
-  //  return transactions.value.reduce((acc, transaction) => {
-  //   return acc + transaction.amount;
-  //  }, 0);
-  // });
-
-  // const income = computed (() => {
-  //   return transactions.value
-  //   .filter((transaction) => transaction.amount > 0)
-  //   .reduce((acc, transaction) => {
-  //     return acc + transaction.amount;
-  //   }, 0)
-  //   .toFixed(2);
-  // });
-
-  // const expense = computed (() => {
-  //   return transactions.value
-  //   .filter((transaction) => transaction.amount < 0)
-  //   .reduce((acc, transaction) => {
-  //     return acc + transaction.amount;
-  //   }, 0)
-  //   .toFixed(2);
-  // });
-  
-  // const generateUniqueId = () => {
-  //   return Math.floor(Math.random() * 1000000);
-  // };
-  
-  // const saveTransactionsToLocalStorage = () => {
-  //   localStorage.setItem('transactions', JSON.stringify(transactions.value))
-  // };
-  
   const handleTransactionSubmitted = (transactionData) => {
     transactionStore.addTransactionStore(transactionData);
     toast.success('Transaction added!!');

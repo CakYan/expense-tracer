@@ -1,18 +1,8 @@
 <script setup>
 import { useTransactionStore } from '../stores/TransactionStore';
 const transactionStore = useTransactionStore();
-    // import { defineProps } from 'vue';
-    // const props = defineProps ({
-    //     income: {
-    //         type: Number,
-    //         required: true,
-    //     },
-    //     expense: {
-    //         type: Number,
-    //         requrired: true,
-    //     },
-    // });
 </script>
+
 <template>
     <div class="inc-exp-container">
         <div>
